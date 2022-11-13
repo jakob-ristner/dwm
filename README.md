@@ -2,7 +2,6 @@
 My fork of dwm, inspired by chaddwm (https://github.com/siduck/chadwm)
 
 ## Requirments
-* dash
 * xsetroot
 * font awesome
 
