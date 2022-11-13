@@ -7,10 +7,10 @@ xsetroot
 font awesome
 
 ## Patches
-actual fullscreen
-swallow
-status2d
-rainbowtags
-underlinetags
-useless gaps
-movestack
+* actual fullscreen
+* swallow
+* status2d
+* rainbowtags
+* underlinetags
+* useless gaps
+* movestack
