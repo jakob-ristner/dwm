@@ -2,9 +2,9 @@
 My fork of dwm, inspired by chaddwm (https://github.com/siduck/chadwm)
 
 ## Requirments
-dash
-xsetroot
-font awesome
+* dash
+* xsetroot
+* font awesome
 
 ## Patches
 * actual fullscreen
