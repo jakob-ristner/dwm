@@ -6,7 +6,7 @@
 interval=0
 
 # load colors
-. ./bar_themes/catppuccin
+. ~/git/dwm/scripts/bar_themes/catppuccin
 
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
