@@ -45,7 +45,7 @@ wlan() {
 }
 
 day() {
-	printf "^c$yellow^ ^b$black^  "
+	printf "^c$yellow^ ^b$black^ "
 	printf "^c$yellow^^b$black^ $(date '+%a %d %B') "
 }
 

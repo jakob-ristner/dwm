@@ -11,7 +11,7 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int barheight          = 20;
-static const char *fonts[]          = { "Jetbrains Mono:size=35",
+static const char *fonts[]          = { "Jetbrains Mono:size=32",
                                         "FontAwesome6Free:size=40", 
                                         "Ubuntu Nerd Font:size=40",
                                         "Material Design Icons Desktop:size=45"};
@@ -88,9 +88,9 @@ static const char *dmenucmd[] = { "dmenu_run", NULL};
 static const char *termcmd[]  = { "st", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", "--force-device-scale-factor=2", NULL };
 
-static const char *upvol[] = { "/usr/bin/amixer", "set", "Master", "5%+", NULL };
-static const char *downvol[] = { "/usr/bin/amixer", "set", "Master", "5%-", NULL };
-static const char *mutevol[] = { "/usr/bin/amixer", "set", "Master", "toggle", NULL };
+static const char *upvol[] = { "/home/jakob/git/dwm/scripts/volume/volinc.sh", NULL };
+static const char *downvol[] = { "/home/jakob/git/dwm/scripts/volume/voldec.sh", NULL};
+static const char *mutevol[] = { "/home/jakob/git/dwm/scripts/volume/volmute.sh", NULL};
 
 static const char *light_up[] = {"light", "-A", "5", NULL};
 static const char *light_down[] = {"light", "-U", "5", NULL};
