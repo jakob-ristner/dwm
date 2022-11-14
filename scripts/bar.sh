@@ -11,7 +11,7 @@ interval=0
 cpu() {
   cpu_val=$(grep -o "^[^ ]*" /proc/loadavg)
 
-  printf "^c$red^ ^b$black^ "
+  printf "^c$red^ ^b$black^ "
   printf " ^c$red^^b$black^$cpu_val "
 }
 
@@ -29,11 +29,11 @@ pkg_updates() {
 
 battery() {
   get_capacity="$(cat /sys/class/power_supply/BAT0/capacity)"
-  printf "^c$mauve^  $get_capacity%%"
+  printf "^c$mauve^ ﴞ $get_capacity%%"
 }
 
 mem() {
-  printf "^c$maroon^^b$black^  "
+  printf "^c$maroon^^b$black^  "
   printf "^c$maroon^$(free -h | awk '/^Mem/ { print $3 }' | sed s/i//g) "
 }
 
@@ -45,7 +45,7 @@ wlan() {
 }
 
 day() {
-	printf "^c$yellow^ ^b$black^ "
+	printf "^c$yellow^ ^b$black^  "
 	printf "^c$yellow^^b$black^ $(date '+%a %d %B') "
 }
 

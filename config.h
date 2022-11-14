@@ -11,7 +11,10 @@ static const int swallowfloating    = 0;        /* 1 means swallow floating wind
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int barheight          = 20;
-static const char *fonts[]          = { "JetbrainsMono:size=35" };
+static const char *fonts[]          = { "Jetbrains Mono:size=35",
+                                        "FontAwesome6Free:size=40", 
+                                        "Ubuntu Nerd Font:size=40",
+                                        "Material Design Icons Desktop:size=45"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -27,17 +30,18 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", ""};
+static const char *tags[] = { "󰅬", "", "", "", "", ""};
 
 static const char *tagsel[][2] = {
 	{ pink, black },
 	{ mauve, black },
 	{ red, black },
+	{ maroon, black },
 	{ peach, black },
-	{ yellow, black },
+    { yellow, black }
 };
 
-static const unsigned int ulinepad	= 10;	/* horizontal padding between the underline and tag */
+static const unsigned int ulinepad	= 9;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 4;	/* thickness / height of the underline */
 static const unsigned int ulinevoffset	= 0;	/* how far above the bottom of the bar the line should appear */
 static const int ulineall 		= 0;	/* 1 to show underline on all tags, 0 for just the active ones */
