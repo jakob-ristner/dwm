@@ -80,7 +80,7 @@ clock() {
 }
 
 bar() {
-    xsetroot -name "$(vol)   $(battery)   $(cpu)   $(mem)   $(wlan)   $(day)   $(clock)  "
+    xsetroot -name "    $(vol)   $(battery)   $(cpu)   $(mem)   $(wlan)   $(day)   $(clock)  "
 }
 
 bar
