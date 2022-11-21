@@ -89,6 +89,7 @@ static const char *dmenucmd[] = { "dmenu_run", NULL};
 static const char *termcmd[]  = { "st", NULL };
 static const char *editorcmd[]  = { "st", "-e", "nvim", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", "--force-device-scale-factor=2", NULL };
+static const char *lockcmd[]  = { "slock", NULL };
 
 static const char *upvol[] = { "/home/jakob/git/dwm/scripts/volume/volinc.sh", NULL };
 static const char *downvol[] = { "/home/jakob/git/dwm/scripts/volume/voldec.sh", NULL};
@@ -104,6 +105,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY|ShiftMask,              XK_Return, spawn,          {.v =  editorcmd} },
+	{ MODKEY|ShiftMask,              XK_l, spawn,          {.v = lockcmd} },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
