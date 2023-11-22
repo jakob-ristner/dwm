@@ -12,10 +12,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int showtitle         = 0;
 static const int barheight          = 20;
-static const char *fonts[]          = { "Jetbrains Mono:size=32",
-                                        "FontAwesome6Free:size=40", 
-                                        "Ubuntu Nerd Font:size=40",
-                                        "Material Design Icons Desktop:size=45"};
+static const char *fonts[]          = { "JetbrainsMono NF:size=32"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
@@ -86,9 +83,10 @@ static const Layout layouts[] = {
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "dmenu_run", NULL};
-static const char *termcmd[]  = { "st", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 static const char *editorcmd[]  = { "st", "-e", "nvim", NULL };
 static const char *browsercmd[]  = { "google-chrome-stable", "--force-device-scale-factor=2", NULL };
+// static const char *browsercmd[]  = { "firefox", NULL };
 static const char *lockcmd[]  = { "slock", NULL };
 
 static const char *upvol[] = { "/home/jakob/git/dwm/scripts/volume/volinc.sh", NULL };
