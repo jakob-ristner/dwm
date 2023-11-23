@@ -1,13 +1,13 @@
 /* See LICENSE file for copyright and license details. */
 
 // Theme
-#include "themes/catppuccin.h"
+#include "themes/nord.h"
 
 /* appearance */
 static const unsigned int borderpx  = 0;        /* border pixel of windows */
 static const unsigned int gappx     = 40;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
-static const int swallowfloating    = 0;        /* 1 means swallow floating windows by default */
+static const int swallowfloating    = 1;        /* 1 means swallow floating windows by default */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int showtitle         = 0;
@@ -28,18 +28,19 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "󰅬", "", "", "", "", ""};
+static const char *tags[] = { "", "", "", "", "", ""};
+static const char *tagsx[] = { "", "", "", "", "", ""};
 
 static const char *tagsel[][2] = {
-	{ pink, black },
-	{ mauve, black },
 	{ red, black },
-	{ maroon, black },
-	{ peach, black },
-    { yellow, black }
+	{ yellow, black },
+	{ orange, black },
+	{ blue, black },
+	{ green, black },
+	{ purple, black },
 };
 
-static const unsigned int ulinepad	= 9;	/* horizontal padding between the underline and tag */
+static const unsigned int ulinepad	= 0;	/* horizontal padding between the underline and tag */
 static const unsigned int ulinestroke	= 4;	/* thickness / height of the underline */
 static const unsigned int ulinevoffset	= 0;	/* how far above the bottom of the bar the line should appear */
 static const int ulineall 		= 0;	/* 1 to show underline on all tags, 0 for just the active ones */
@@ -52,7 +53,7 @@ static const Rule rules[] = {
 	/* class     instance  title           tags mask  isfloating  isterminal  noswallow  monitor */
 	{ "Gimp",    NULL,     NULL,           0,         1,          0,           0,        -1 },
 	{ "Firefox", NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
-	{ "st-256color",      NULL,     NULL,           0,         0,          1,           0,        -1 },
+	{ "kitty",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ NULL,      NULL,     "Event Tester", 0,         0,          0,           1,        -1 }, /* xev */
 };
 

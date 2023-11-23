@@ -904,9 +904,9 @@ drawbar(Monitor *m)
 	for (i = 0; i < LENGTH(tags); i++) {
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, ((m->tagset[m->seltags] & 1 << i) || occ & 1 << i ? tagscheme[i] : scheme[SchemeNorm]));
-		drw_text(drw, x, 0, w, bh, lrpad / 2, tags[i], urg & 1 << i);
-		if (ulineall || m->tagset[m->seltags] & 1 << i) 
-			drw_rect(drw, x + ulinepad, bh - ulinestroke - ulinevoffset, w - (ulinepad * 2), ulinestroke, 1, 0);
+		drw_text(drw, x, 0, w, bh, lrpad / 2, ((m->tagset[m->seltags] & 1 << i) ? tags[i] : tagsx[i]), urg & 1 << i);
+		// if (ulineall || m->tagset[m->seltags] & 1 << i) 
+		// 	drw_rect(drw, x + ulinepad, bh - ulinestroke - ulinevoffset, w - (ulinepad * 2), ulinestroke, 1, 0);
         /*
 		if (occ & 1 << i)
 			drw_rect(drw, x + boxs, boxs, boxw, boxw,
