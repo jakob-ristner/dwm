@@ -925,6 +925,7 @@ drawbar(Monitor *m)
             if (showtitle)
 			//TODO move to config.h lmao
 			w = TEXTW("");
+
 			x = drw_text(drw, x, 0, w, bh, lrpad / 2, "", 0);
 			w = m->ww - tw - x;
 			drw_text(drw, x, 0, w, bh, lrpad / 2, m->sel->name, 0);
