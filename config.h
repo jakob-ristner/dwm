@@ -31,6 +31,8 @@ static const char *colors[][3]      = {
 static const char *tags[] = { "", "", "", "", "", ""};
 static const char *tagsx[] = { "", "", "", "", "", ""};
 
+static const char *title_symbol = "";
+
 static const char *tagsel[][2] = {
 	{ red, black },
 	{ yellow, black },
