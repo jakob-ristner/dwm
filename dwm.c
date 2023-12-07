@@ -902,9 +902,13 @@ drawbar(Monitor *m)
 	}
 	x = 0;
 	for (i = 0; i < LENGTH(tags); i++) {
+		char* urgent = urg & 1 << i;
+		char* circle = ((m->tagset[m->seltags] & 1 << i) ? tags[i] : tagsx[i]);
+		char* icon = urgent ? urgent_icon : circle;
+
 		w = TEXTW(tags[i]);
 		drw_setscheme(drw, ((m->tagset[m->seltags] & 1 << i) || occ & 1 << i ? tagscheme[i] : scheme[SchemeNorm]));
-		drw_text(drw, x, 0, w, bh, lrpad / 2, ((m->tagset[m->seltags] & 1 << i) ? tags[i] : tagsx[i]), urg & 1 << i);
+		drw_text(drw, x, 0, w, bh, lrpad / 2, icon, 0);
 		// if (ulineall || m->tagset[m->seltags] & 1 << i) 
 		// 	drw_rect(drw, x + ulinepad, bh - ulinestroke - ulinevoffset, w - (ulinepad * 2), ulinestroke, 1, 0);
         /*
