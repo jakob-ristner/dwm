@@ -12,7 +12,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int showtitle         = 1;
 static const int barheight          = 20;
-static const char *fonts[]          = { "jetbrainsmono:size=24", "ubuntumononerdfont:size=32" };
+static const char *fonts[]          = { "jetbrainsmono:size=24", "ubuntumononerdfont:size=32", "emoji:size=32"};
 static const char dmenufont[]       = "monospace:size=10";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
