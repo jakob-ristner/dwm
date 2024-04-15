@@ -1,7 +1,7 @@
 /* See LICENSE file for copyright and license details. */
 
 // Theme
-#include "themes/nord.h"
+#include "themes/rosepine.h"
 
 /* appearance */
 static const unsigned int borderpx = 0; /* border pixel of windows */
@@ -15,18 +15,12 @@ static const int showtitle = 1;
 static const int barheight = 20;
 static const char *fonts[] = {"jetbrainsmono:size=24",
                               "ubuntumononerdfont:size=32", "emoji:size=32"};
-static const char dmenufont[] = "monospace:size=10";
-static const char col_gray1[] = "#222222";
-static const char col_gray2[] = "#444444";
-static const char col_gray3[] = "#bbbbbb";
-static const char col_gray4[] = "#eeeeee";
-static const char col_cyan[] = "#005577";
 static const char *colors[][3] = {
     /*               fg         bg         border   */
-    [SchemeNorm] = {gray, black, black},
-    [SchemeSel] = {gray, black, black},
-    [SchemeLayout] = {green, black, black},
-    [SchemeTitle] = {white, black, black},
+    [SchemeNorm] = {black, bg, bg},
+    [SchemeSel] = {black, bg, bg},
+    [SchemeLayout] = {green, bg, bg},
+    [SchemeTitle] = {fg, bg, bg},
 };
 
 /* tagging */
@@ -37,8 +31,7 @@ static const char *title_symbol = "";
 static const char *urgent_icon = "";
 
 static const char *tagsel[][2] = {
-    {red, black},  {yellow, black}, {orange, black},
-    {blue, black}, {green, black},  {purple, black},
+    {red, bg}, {yellow, bg}, {cyan, bg}, {blue, bg}, {green, bg}, {magenta, bg},
 };
 
 static const unsigned int ulinepad =
